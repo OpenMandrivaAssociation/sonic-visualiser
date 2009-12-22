@@ -44,7 +44,7 @@ BuildRequires: libx11_6-devel
 BuildRequires: libxcursor1
 BuildRequires: libxdmcp6-devel
 BuildRequires: libxext6-devel
-BuildRequires: libxfixes3-devel
+BuildRequires: libxfixes-devel
 BuildRequires: libxrender1-devel
 BuildRequires: zlib1-devel
 BuildRequires: libalsa-devel
