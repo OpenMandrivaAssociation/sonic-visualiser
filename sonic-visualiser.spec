@@ -60,7 +60,7 @@ to study a musical recording rather than simply listen to it.
 
 %build
 qmake
-make %{?_smp_mflags}
+%make
 
 %install
 rm -rf $RPM_BUILD_ROOT
