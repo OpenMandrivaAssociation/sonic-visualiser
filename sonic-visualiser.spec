@@ -1,6 +1,6 @@
 Name:           sonic-visualiser
 Version:        1.7.1
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Application for viewing and analysing the contents of music audio files
 Group:          Sound
 License:        GPLv2+
@@ -11,9 +11,16 @@ Source0:        http://downloads.sourceforge.net/sv1/%{name}-%{version}.tar.bz2
 Source1:        mandriva-sonic-visualiser.desktop
 Patch0:         sonic-visualiser-1.5-gcc44.patch
 Patch1:         sonic-visualiser-1.5-alsa.patch
+# thanks gentoo for this one
+Patch2:         sonic-visualiser-1.7.1-liboggz11.patch
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
+BuildRequires:  raptor-devel
+BuildRequires:  liblrdf-devel
+BuildRequires:  mad-devel
+BuildRequires:  id3tag-devel
+BuildRequires:  portaudio-devel
 BuildRequires:  qt4-devel
 BuildRequires:  vamp-plugin-sdk-devel
 BuildRequires:  libsndfile-devel
@@ -47,6 +54,7 @@ analysis plugin format – as well as applying standard audio effects.
 %patch0 -p1 -b .gcc44
 # https://sourceforge.net/tracker/?func=detail&aid=2715381&group_id=162924&atid=825705
 %patch1 -p1 -b .alsa
+%patch2 -p1
 
 %build
 qmake
