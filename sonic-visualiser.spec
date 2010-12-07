@@ -1,6 +1,6 @@
 Name:           sonic-visualiser
 Version:        1.7.1
-Release:        %mkrel 2
+Release:        %mkrel 3
 Summary:        Application for viewing and analysing the contents of music audio files
 Group:          Sound
 License:        GPLv2+
