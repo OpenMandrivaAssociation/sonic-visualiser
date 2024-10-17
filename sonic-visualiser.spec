@@ -4,7 +4,7 @@ Release:        2
 Summary:        Application for viewing and analysing the contents of music audio files
 Group:          Sound
 License:        GPLv2+
-URL:            http://www.sonicvisualiser.org
+URL:            https://www.sonicvisualiser.org
 Source0:        http://downloads.sourceforge.net/sv1/%{name}-%{version}.tar.gz
 Source1:	sonic-visualiser.desktop
 
