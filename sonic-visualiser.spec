@@ -8,6 +8,11 @@ URL:            https://www.sonicvisualiser.org
 Source0:        http://downloads.sourceforge.net/sv1/%{name}-%{version}.tar.gz
 Source1:	sonic-visualiser.desktop
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  raptor-devel
 BuildRequires:  liblrdf-devel
 BuildRequires:  mad-devel
